@@ -12,6 +12,12 @@ header {
     text-align: center;
 }
 
+button {
+    background-color:aquamarine;
+    font-family: Arial;
+    border-style: hidden;
+}
+
 hr {
     width: auto;
     height: 4px;
