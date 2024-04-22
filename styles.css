@@ -3,6 +3,7 @@ body {
     margin: 1;
     padding: 0;
     background-color: lightblue;
+    box-sizing: border-box;
 }
 
 header {
@@ -30,7 +31,7 @@ hr {
 
 nav ul {
     list-style-type: none;
-    padding: 2;
+    padding: 20px;
 }
 
 nav ul li {
@@ -56,5 +57,4 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px;
-    width: 100%;
 }
