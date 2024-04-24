@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('background.jpg');
+    background-color: lightgray;
     background-size: cover;
     background-position: center;
 }
@@ -31,7 +31,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ffc107; /* change color on hover */
+    color: pink; /* change color on hover */
 }
 
 .container {
@@ -60,12 +60,12 @@ h1, p {
 }
 
 .btn:hover {
-    background-color: turquoise; /* darker blue on hover */
+    background-color: pink; /* pink on hover */
 }
 
 .contact-btn {
-    background-color: #ff9800; /* orange color */
-    color: #fff;
+    background-color: lightblue; /* blue color */
+    color: black;
     padding: 12px 20px;
     border: none;
     border-radius: 5px;
@@ -74,7 +74,7 @@ h1, p {
 }
 
 .contact-btn:hover {
-    background-color: #f57c00; /* darker orange on hover */
+    background-color: pink; /* pink on hover */
 }
 
 /* Modal */

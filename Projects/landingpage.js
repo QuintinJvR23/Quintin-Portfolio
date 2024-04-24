@@ -27,8 +27,29 @@ document.addEventListener("DOMContentLoaded", function() {
         var name = contactForm.querySelector('input[type="text"]').value;
         var email = contactForm.querySelector('input[type="email"]').value;
         var message = contactForm.querySelector('textarea').value;
-        // Here you can add code to handle the form submission, like AJAX request or displaying a confirmation message
-        console.log("Name: " + name + ", Email: " + email + ", Message: " + message);
-        modal.style.display = "none";
+
+        // Simulate sending message to example@mail.com
+        var formData = new FormData();
+        formData.append('name', name);
+        formData.append('email', email);
+        formData.append('message', message);
+
+        // You would typically send this data to a server using AJAX
+        // Here's a simulated AJAX request for demonstration
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', 'https://example.com/send_message');
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === XMLHttpRequest.DONE) {
+                if (xhr.status === 200) {
+                    console.log('Message sent successfully!');
+                    // You can display a success message to the user or perform any other action
+                } else {
+                    console.error('Failed to send message:', xhr.statusText);
+                    // Handle error: display an error message to the user or retry sending the message
+                }
+                modal.style.display = "none"; // Close the modal regardless of the outcome
+            }
+        };
+        xhr.send(formData);
     });
 });
